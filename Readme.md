@@ -1,6 +1,6 @@
 # Diogenes to epub for e-readers
 
-diogenes-epub is a package that takes XML files of Latin or Greek texts exported from the Diogenes desktop application and converts them to xhtml files suitable for conversion to epub format, by using code from the DiogenesWeb project.
+diogenes-epub is a package that takes XML files of Latin or Greek texts exported from the Diogenes desktop application (or from other projects, such as Perseus, etc.) and converts them to xhtml files suitable for conversion to epub format, by re-using some code from the DiogenesWeb project.
 
 # Prerequsites
 
@@ -32,4 +32,4 @@ If you are on a Mac, you should change that last line to something like:
 
 You can then open the file eclogues.epub in an e-reader, or use Calibre to convert it to another e-book format of your choice.
 
-The formatting is not always perfect, but it is usable.
+The formatting is not always perfect (e.g. footnotes), but it is usable.
