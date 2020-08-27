@@ -46,7 +46,7 @@ global.tippy.setDefaultProps = function () {}
 // Now we are ready to pretend to be a browser
 
 // Load conversion code
-const fileDisplay = require('../app/source/js/file-display.js');
+const fileDisplay = require('./lib/file-display.js');
 // Do not add parse links to words
 fileDisplay.stopLinks()
 // Convert to html
