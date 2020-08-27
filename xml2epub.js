@@ -56,11 +56,10 @@ fileDisplay.xml2html(xmlDoc)
 var doc = htmlDom.window.document
 // Fix the title of the document
 var title = doc.getElementById('main').firstChild.textContent
-console.log(title)
+console.log('Converting: ', title)
 doc.title = title
 // Get rid of the link to show raw XML
 var xmlLink = doc.getElementsByClassName('xmlLink')[0]
-console.log(xmlLink.textContent)
 xmlLink.parentNode.removeChild(xmlLink)
 // Make all h1 headings get picked up as "chapters" by auto ToC
 var h = doc.getElementsByTagName('h1')
