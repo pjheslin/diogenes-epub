@@ -1,0 +1,298 @@
+
+#parseCloseBtn {
+  position: fixed;
+  top: 0px;
+  right: 24px;
+  font-size: 28px;
+  margin-left: 50px;
+  padding: 4px 4px 4px 16px;
+  text-decoration: none;
+  color: #818181;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* border between main and sidebar */
+  padding-right: 5px;
+  /* resize: horizontal;
+  overflow: scroll; */
+  overflow-x:hidden;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* The morphology and lexicon panel */
+
+#sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  opacity: 1;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px;
+  padding-bottom: 60px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  /* to enable momentum scrolling on iOS */
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
+.highlighted-word {
+  background-color: lightgrey;
+}
+
+img.next {
+         float: right;
+}
+img.prev {
+         float: left;
+}
+
+.noteMark {
+  /* color: #a41e22; */
+  color: #28709a;
+  font-size: 200%;
+  line-height: 0;
+  position: relative;
+  top: 0.2em;
+  vertical-align: baseline;
+}
+
+.logeion-link {
+  text-decoration: none;
+  color: #28709a;
+}
+
+.divLevel1 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.divLevel2 {
+  padding-left: 25px;
+  padding-right: 5px;
+}
+.divLevel3 {
+  padding-left: 45px;
+  padding-right: 5px;
+}
+.divLevel4 {
+  padding-left: 65px;
+  padding-right: 5px;
+}
+.divLevel5 {
+  padding-left: 85px;
+  padding-right: 5px;
+}
+.divLevel6 {
+  padding-left: 105px;
+  padding-right: 5px;
+}
+
+
+/* Elements */
+
+.lineNum {
+  float: right;
+  margin-right:0px;
+  text-align:right;
+  width: 30px;
+}
+
+/* For turnover on long lines */
+.line {
+  text-indent: -2em;
+  padding-left: 2em;
+}
+/* .line .text {
+  margin-right:10em;
+} */
+
+.xml-header {
+  text-align: center;
+  color: #28709a;
+}
+
+sourceDesc {
+  color: grey;
+}
+sourceDesc author {
+  font-weight: bold;
+}
+sourceDesc author::after {
+  content: "\00a0\00a0";
+}
+sourceDesc title {
+  font-style: italic;
+}
+sourceDesc title::after {
+  content: "\00a0\00a0";
+}
+.xmlLink {
+  color: grey;
+}
+
+h1 {
+  font-size: large;
+  color: #28709a;
+}
+
+h2 {
+  color: #28709a;
+}
+
+
+.speaker {
+  color: #28709a;
+  font-weight: bold;
+  text-indent: 2em;
+}
+.speaker:after {
+  content: "\00a0\00a0";
+}
+
+.stage-direction {
+  color: #28709a;
+  font-weight: bold;
+  text-indent: 2em;
+}
+.stage-direction:after {
+  content: "\00a0\00a0";
+}
+
+/* rend attributes */
+
+.indent1 {
+  text-indent: 0.5em;
+}
+.indent2 {
+  text-indent: 1em;
+}
+.indent3 {
+  text-indent: 1.5em;
+}
+.indent4 {
+  text-indent: 2em;
+}
+.indent5 {
+  text-indent: 2.5em;
+}
+.indent6 {
+  text-indent: 3em;
+}
+
+.Marginalia {
+  display:block;
+  text-indent: -20em;
+  padding-left: 20em;
+}
+
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.superscript {
+  vertical-align: super;
+  font-size: 75%;
+}
+.subscript {
+  vertical-align: sub;
+  font-size: 75%;
+}
+.small-caps {
+  text-transform: uppercase;
+  font-size: 75%
+}
+.small {
+  font-size: 75%;
+}
+.large {
+  font-size: 125%
+}
+.very-small {
+  font-size: 50%;
+}
+.very-large {
+  font-size: 150%;
+}
+.overline {
+  text-decoration: overline;
+}
+.underline {
+  text-decoration: underline;
+}
+.double-underline {
+  /* FIXME */
+  text-decoration: underline;
+}
+.Stacked-text-lower {
+  vertical-align: -100%;
+}
+.Stacked-text-upper {
+  vertical-align: 100%;
+}
+.Single-spacing {
+  line-height: 75%;
+}
+.Interlinear-text
+.line-through {
+  text-decoration: line-through;
+}
+.letter-spacing {
+  letter-spacing: 0.2em;
+}
+/* digilib */
+.expanded {
+  letter-spacing: 0.2em;
+}
+.boxed {
+  outline: medium solid black;
+}
+.horizontal-rule {
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  margin: 0;
+  border-radius: 8px;
+}
+.space:after {
+  content: "\00a0\00a0";
+}
+
+/* Don't strikethru */
+del {
+  text-decoration: none;
+}
+del::before {
+  content: "["
+}
+del::after {
+  content: "]"
+}
+.supplied::before {
+  content: "<"
+}
+.supplied::after {
+  content: ">"
+}
+.unclear::before {
+  content: "†"
+}
+.unclear::after {
+  content: "†"
+}
+.dlt-img {
+  max-width: 100%;
+}
