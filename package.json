@@ -1,0 +1,32 @@
+{
+  "name": "xml2html",
+  "description": "Convert Diogenes XML files into DiogenesWeb HTML",
+  "version": "0.1.0",
+  "main": "xml2html.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pjheslin/DiogenesWeb"
+  },
+  "keywords": [
+    "Latin",
+    "Greek",
+    "XML",
+    "HTML"
+  ],
+  "author": "Peter Heslin <p.j.heslin@durham.ac.uk>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/pjheslin/DiogenesWeb/issues"
+  },
+  "homepage": "https://d.iogen.es/web",
+  "scripts": {
+    "start": "node xml2html.js"
+  },
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.6.1",
+    "jsdom": "^16.4.0",
+    "node-localstorage": "^2.1.6",
+    "utf-8-validate": "^5.0.2"
+  }
+}
